@@ -10,8 +10,10 @@
 <body>
     <header id="header" class="wrapper">
         <div class="logo">
-            <img src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/capella/demo/wp-content/themes/capella/images/logo@2x_white.png" width="160" alt="">
-            <img src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/capella/demo/wp-content/themes/capella/images/logo@2x.png" width="160" alt="">
+            <a href="index.html" id="logo">
+                <img src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/capella/demo/wp-content/themes/capella/images/logo@2x_white.png" width="160" alt="">
+                <img src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/capella/demo/wp-content/themes/capella/images/logo@2x.png" width="160" alt="" style="display: none">
+            </a>
         </div>
         
         <ul class="nav">
@@ -19,7 +21,7 @@
                 <a href="index.html" class="nav-link">მთავარი</a>
             </li>
             <li class='nav-item'>
-                <a href="menu.html" class="nav-link">მენიუ</a>
+                <a href="menu.html" class="nav-link active">მენიუ</a>
             </li>
             <li class='nav-item'>
                 <a href="" class="nav-link">დარბაზი</a>
@@ -331,7 +333,7 @@
                     </div>
                 </div>
             </div>
-            <ul class="pagination-list">
+            <ul class="pagination-list" id="pagination-list">
                 <li onclick="setActivePageItem(event)" class="pagination-item active" data-index="1"></li>
                 <li onclick="setActivePageItem(event)" class="pagination-item" data-index="2"></li>
                 <li onclick="setActivePageItem(event)" class="pagination-item" data-index="3"></li>
