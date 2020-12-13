@@ -17,6 +17,28 @@ const swiper = new Swiper('.swiper-container', {
     }
 })
 
+const menuSwiper = new Swiper('.menu-slider', {
+    
+    freeMode: false,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next'
+    }
+})
+
 
 
 swiper.on('slideChangeTransitionStart', function () {
@@ -48,44 +70,44 @@ let sliderCounter = {
     num2: 3
 }
 
-function initSlider() {
-    for(let i = 0; i < menuBox.length; i++) {
-        menuBox[i].classList.add('d-none')
-        menuBox[i].classList.remove('active-menu')
+// function initSlider() {
+//     for(let i = 0; i < menuBox.length; i++) {
+//         menuBox[i].classList.add('d-none')
+//         menuBox[i].classList.remove('active-menu')
 
-        if(i >= sliderCounter.num && i < sliderCounter.num2) {
-            menuBox[i].classList.remove('d-none')
-            setTimeout(() => {menuBox[i].classList.add('active-menu')}, 300 * i)
-            console.log(menuBox[i])
-        }
-    }
-}
+//         if(i >= sliderCounter.num && i < sliderCounter.num2) {
+//             menuBox[i].classList.remove('d-none')
+//             setTimeout(() => {menuBox[i].classList.add('active-menu')}, 300 * i)
+//             console.log(menuBox[i])
+//         }
+//     }
+// }
 
-initSlider()
+// initSlider()
 
-nextBtn.addEventListener('click', () => {
-    sliderCounter.num += 3
-    sliderCounter.num2 += 3
+// nextBtn.addEventListener('click', () => {
+//     sliderCounter.num += 3
+//     sliderCounter.num2 += 3
 
-    if(sliderCounter.num2 > 6) {
-        sliderCounter.num = 0
-        sliderCounter.num2 = 3
-    }
-    initSlider()
+//     if(sliderCounter.num2 > 6) {
+//         sliderCounter.num = 0
+//         sliderCounter.num2 = 3
+//     }
+//     initSlider()
 
-    console.log(sliderCounter)
+//     console.log(sliderCounter)
     
-})
+// })
 
-prevBtn.addEventListener('click', () => {
-    sliderCounter.num -= 3
-    sliderCounter.num2 -= 3
-    if(sliderCounter.num2 === 0) {
-        sliderCounter.num = menuBox.length - 3
-        sliderCounter.num2 = menuBox.length
-    }
-    initSlider()
-    console.log(sliderCounter)
+// prevBtn.addEventListener('click', () => {
+//     sliderCounter.num -= 3
+//     sliderCounter.num2 -= 3
+//     if(sliderCounter.num2 === 0) {
+//         sliderCounter.num = menuBox.length - 3
+//         sliderCounter.num2 = menuBox.length
+//     }
+//     initSlider()
+//     console.log(sliderCounter)
     
-})
+// })
 

@@ -1,5 +1,9 @@
 @import './pre.css';
 
+body {
+	overflow-x: hidden;
+}
+
 .caps {
 	font-family: 'mrgvlovani-caps', sans-serif;
 }
@@ -140,6 +144,20 @@ a.nav-link.active {
 	transform: translateY(-64px);
 }
 
+.header .burger-menu {
+	width: 36px;
+    cursor: pointer;
+	fill: #fff;
+	display: none;
+}
+
+.header-fixed .burger-menu {
+	fill: #222;
+	width: 36px;
+	cursor: pointer;
+	display: none;
+}
+
 .header-fixed {
 	position: fixed;
 	width: 100%;
@@ -152,18 +170,24 @@ a.nav-link.active {
 	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.behind {
-	display: none;
-	height: 64px;
-}
-
-
 .d-block {
 	display: block;
 }
 
-.sandbox {
-	height: 600px;
+.mobile-nav {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	transform: translateX(100%);
+	transition: all 200ms;
+}
+
+.mobile-nav-show {
+	transform: translateX(0);
 }
 
 /*
@@ -174,7 +198,7 @@ Swiper stylesheet
 *****
 */
 
-.swiper-container {
+.main-slider {
 	height: 700px;
 	width: 100%;
 }
@@ -182,7 +206,6 @@ Swiper stylesheet
 	text-align: center;
 	font-size: 18px;
 	background: #fff;
-
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -204,11 +227,24 @@ Swiper stylesheet
 	background: #fff;
 }
 
-.text {
+.swiper-slide .text {
 	position: absolute;
 	top: 50%;
 	left: 20%;
 	color: #fff;	
+}
+
+.swiper-slide img {
+	width: 100%;
+}
+
+.swiper-slide .slide-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(151, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .slide-title {
@@ -217,6 +253,7 @@ Swiper stylesheet
 	transform: translateX(40px);
 	transition: all 1.4s;
 	transition-delay: 1.2s;
+	color: #aea512;
 }
 
 .slide-title-one {
@@ -294,9 +331,12 @@ About stylesheet
 	background-image: url('https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-6.png');
 	background-repeat: no-repeat;
 	background-position-y: bottom;
+	background-position-x: right;
 	color: #fff;
 	width: 35%;
-    padding: 1rem;
+	padding: 1rem;
+	border: 6px solid rgba(0, 0, 0, 0.1);
+	border-right: none;
 }
 
 .about-image .about-image-title {
@@ -312,7 +352,7 @@ About stylesheet
 	border: 6px solid rgba(0, 0, 0, 0.1);
 	border-left: 0;
 	padding: 3rem;
-	
+	background: #eee;
 
 }
 
@@ -356,20 +396,15 @@ Menu stylesheet
 	padding: 120px 0;
 }
 
-.menu-slider {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	height: 432px;
+.main-slider {
+	/* overflow: hidden; */
 }
 
 .menu-box {
-	width: 30%;
+	width: 100%;
 	cursor: pointer;
 	transition: all 1000ms;
 	height: 100%;
-	opacity: 0;
-	visibility: hidden;
 	border: 6px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -442,14 +477,17 @@ Menu stylesheet
 	cursor: pointer;
 }
 
-.prev-button {
-	transform: rotate(180deg);
-	left: -30px;
+.menu-slider .swiper-button-prev,
+.menu-slider .swiper-button-next {
+	color: white;
 }
 
-.next-button {
-	right: -30px;
-	
+.menu-slider .swiper-button-prev {
+	left: -40px;
+}
+
+.menu-slider .swiper-button-next {
+	right: -40px;
 }
 
 .active-menu {
@@ -480,7 +518,9 @@ Food stylesheet
 }
 
 .food-box-title {
-	color: #333;
+	color: #aea512;
+	font-weight: normal;
+	margin-bottom: .5rem;
 }
 
 .food-box-text {
@@ -549,6 +589,10 @@ Contact stylesheet
 
 .main-map {
 	width: 60%;
+}
+
+.googleMap {
+	height: 400px;
 }
 
 .contact-item {
@@ -734,8 +778,10 @@ ul.pagination-list {
 	border: 1px solid #ccc;
 	margin-right: 1rem;
 	cursor: pointer;
+	background: #eee;
 }
 
 .pagination-list .pagination-item.active {
 	box-shadow: 0 0 0 3px #d2c82a;
+	background: #fff;
 }

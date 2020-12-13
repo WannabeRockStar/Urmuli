@@ -130,7 +130,7 @@ function initActivePageItem(num) {
     }
 
     for(let i = 0; i < totalPages; i++) {
-       if(i === 0) {
+       if(i + 1 === num) {
         pageContent += `
             <li onclick="setActivePageItem(event)" class="pagination-item active" data-index="${i + 1}"></li>
         `
@@ -147,7 +147,7 @@ function initActivePageItem(num) {
 
 
     for(let i = 0; i < data.length; i++) {
-        content += `<div class="menu-page-item" data-aos="fade-up">
+        content += `<div class="menu-page-item" data-aos="fade-left" data-aos-delay="${100 * i}">
             <div class="menu-page-image">
                 <img src="${data[i].url}" alt="">
             </div>

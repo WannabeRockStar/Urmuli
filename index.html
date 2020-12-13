@@ -6,6 +6,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="assets/css/aos.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media.css">
 	<link rel="stylesheet" href="assets/css/swiper-bundle.css">
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
@@ -15,7 +16,7 @@
 </head>
 <body>
 	<div>
-		<header id="header" class="wrapper">
+		<header id="header" class="header wrapper">
 			<div class="logo">
 				<a href="index.html" id="logo">
 					<img src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/capella/demo/wp-content/themes/capella/images/logo@2x_white.png" width="160" alt="">
@@ -37,20 +38,34 @@
 					<a href="contact.html" class="nav-link">კონტაქტი</a>
 				</li>
 			</ul>
+
+			<span class="burger-menu" onclick="showMobileMenu()">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;" xml:space="preserve">
+					<g>
+						<g id="Menu_1_">
+							<path d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03    c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z"/>
+							<path d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03    S379.58,180.455,372.939,180.455z"/>
+							<path d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606    c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z"/>
+						</g>
+					</g>
+				</svg>
+			</span>
 		</header>
 		
 		<!-- Swiper Header Section -->
-		<div class="swiper-container">
+		<div class="swiper-container main-slider">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
-					<img src="https://images.pexels.com/photos/5139404/pexels-photo-5139404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+					<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/2.jpg" alt="">
+					<div class="slide-overlay"></div>
 					<div class="text">
 						<h1 class="slide-title slide-title-one">ურმულის მენიუ</h1>
 						<p class="slide-subtitle sub-one">Gastro brings you the exclusive food & restaurant features including online reservation, HTML food</p>
 					</div>
 				</div>
 				<div class="swiper-slide">
-					<img src="https://images.pexels.com/photos/1260840/pexels-photo-1260840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+					<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/1.jpg" alt="">
+					<div class="slide-overlay"></div>
 					<div class="text">
 						<h1 class="slide-title slide-title-two">ლორემ იპსუმი</h1>
 						<p class="slide-subtitle sub-two">Gastro brings you the exclusive food & restaurant features including online reservation, HTML food</p>
@@ -58,6 +73,7 @@
 				</div>
 				<div class="swiper-slide">
 					<img src="https://images.pexels.com/photos/3707669/pexels-photo-3707669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+					<div class="slide-overlay"></div>
 					<div class="text">
 						<h1 class="slide-title slide-title-three">გენერირებული ტექსტი</h1>
 						<p class="slide-subtitle sub-three">Gastro brings you the exclusive food & restaurant features including online reservation, HTML food</p>
@@ -102,115 +118,116 @@
 		<section>
 			<div class="menu-sec parallax-box">
 				<div class="wrapper">
-					<h2 class="text-white sec-title sec-title-white mb-6">პოპულარული კერძი</h2>
+					<h2 class="text-white sec-title sec-title-white mb-7">პოპულარული კერძი</h2>
 					<div class="menu-slider">
-						<span class="prev-button menu-slide-button" id="prev-btn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20.013" height="24.906" viewBox="0 0 12.013 21.906">
-								<g id="Group_70" data-name="Group 70" transform="translate(42.561 -19626.655) rotate(-90)">
-									<path id="Path_61" data-name="Path 61" d="M0,9.892,9.892,0" transform="translate(-19637.607 -41.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path>
-									<path id="Path_60" data-name="Path 60" d="M9.892,9.892,0,0" transform="translate(-19647.5 -41.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path>
-								</g>
-							</svg>
-						</span>
-						<div class="menu-box">
-							<div class="menu-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
-								<div class="overlay">
-									<span class="expand-icon">
-										<img src="assets/images/expand-icon.png" alt="">
-									</span>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="menu-box">
+									<div class="menu-image">
+										<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
+										<div class="overlay">
+											<span class="expand-icon">
+												<img src="assets/images/expand-icon.png" alt="">
+											</span>
+										</div>
+									</div>
+									<h3 class="menu-title">Lorem ipsum</h3>
+									<div class="menu-paragraph">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
+									</div>
 								</div>
 							</div>
-							<h3 class="menu-title">Lorem ipsum</h3>
-							<div class="menu-paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
-							</div>
-						</div>
-						<div class="menu-box">
-							<div class="menu-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
-								<div class="overlay">
-									<span class="expand-icon">
-										<img src="assets/images/expand-icon.png" alt="">
-									</span>
+							<div class="swiper-slide">
+								<div class="menu-box">
+									<div class="menu-image">
+										<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
+										<div class="overlay">
+											<span class="expand-icon">
+												<img src="assets/images/expand-icon.png" alt="">
+											</span>
+										</div>
+									</div>
+									<h3 class="menu-title">Lorem ipsum 2</h3>
+									<div class="menu-paragraph">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
+									</div>
+									
 								</div>
 							</div>
-							<h3 class="menu-title">Lorem ipsum 2</h3>
-							<div class="menu-paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
+
+							<div class="swiper-slide">
+								<div class="menu-box">
+									<div class="menu-image">
+										<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-1-large-800x600.jpg" alt="">
+										<div class="overlay">
+											<span class="expand-icon">
+												<img src="assets/images/expand-icon.png" alt="">
+											</span>
+										</div>
+									</div>
+									<h3 class="menu-title">Lorem ipsum 3</h3>
+									<div class="menu-paragraph">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
+									</div>
+								</div>
 							</div>
+
+							<div class="swiper-slide">
+								<div class="menu-box">
+									<div class="menu-image">
+										<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
+										<div class="overlay">
+											<span class="expand-icon">
+												<img src="assets/images/expand-icon.png" alt="">
+											</span>
+										</div>
+									</div>
+									<h3 class="menu-title">Lorem ipsum 4</h3>
+									<div class="menu-paragraph">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="menu-box">
+									<div class="menu-image">
+										<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/12/food-3-large-800x600.png" alt="">
+										<div class="overlay">
+											<span class="expand-icon">
+												<img src="assets/images/expand-icon.png" alt="">
+											</span>
+										</div>
+									</div>
+									<h3 class="menu-title">Lorem ipsum 5</h3>
+									<div class="menu-paragraph">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="menu-box">
+									<div class="menu-image">
+										<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
+										<div class="overlay">
+											<span class="expand-icon">
+												<img src="assets/images/expand-icon.png" alt="">
+											</span>
+										</div>
+									</div>
+									<h3 class="menu-title">Lorem ipsum 6</h3>
+									<div class="menu-paragraph">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
+									</div>
+								</div>
+							</div>
+						
+
 							
 						</div>
-	
-						<div class="menu-box">
-							<div class="menu-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-1-large-800x600.jpg" alt="">
-								<div class="overlay">
-									<span class="expand-icon">
-										<img src="assets/images/expand-icon.png" alt="">
-									</span>
-								</div>
-							</div>
-							<h3 class="menu-title">Lorem ipsum 3</h3>
-							<div class="menu-paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
-							</div>
-							
-						</div>
-	
-						<div class="menu-box">
-							<div class="menu-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
-								<div class="overlay">
-									<span class="expand-icon">
-										<img src="assets/images/expand-icon.png" alt="">
-									</span>
-								</div>
-							</div>
-							<h3 class="menu-title">Lorem ipsum 4</h3>
-							<div class="menu-paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
-							</div>
-						</div>
-	
-						<div class="menu-box">
-							<div class="menu-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/12/food-3-large-800x600.png" alt="">
-								<div class="overlay">
-									<span class="expand-icon">
-										<img src="assets/images/expand-icon.png" alt="">
-									</span>
-								</div>
-							</div>
-							<h3 class="menu-title">Lorem ipsum 5</h3>
-							<div class="menu-paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
-							</div>
-						</div>
-	
-						<div class="menu-box">
-							<div class="menu-image">
-								<img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/special-2-large-800x600.jpg" alt="">
-								<div class="overlay">
-									<span class="expand-icon">
-										<img src="assets/images/expand-icon.png" alt="">
-									</span>
-								</div>
-							</div>
-							<h3 class="menu-title">Lorem ipsum 6</h3>
-							<div class="menu-paragraph">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur soluta minima nostrum.
-							</div>
-						</div>
-	
-						<span class="next-button menu-slide-button" id="next-btn">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20.013" height="24.906" viewBox="0 0 12.013 21.906">
-								<g id="Group_70" data-name="Group 70" transform="translate(42.561 -19626.655) rotate(-90)">
-									<path id="Path_61" data-name="Path 61" d="M0,9.892,9.892,0" transform="translate(-19637.607 -41.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path>
-									<path id="Path_60" data-name="Path 60" d="M9.892,9.892,0,0" transform="translate(-19647.5 -41.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"></path>
-								</g>
-							</svg>
-						</span>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 				</div>
 			</div>
@@ -219,7 +236,7 @@
 		<section class="food-sec sec-p">
 			<div class="wrapper">
 				<div class="food">
-					<h2 class="food-title sec-title mb-6">
+					<h2 class="food-title sec-title mb-7">
 						ჩვენი მენიუ
 					</h2>
 	
@@ -323,19 +340,19 @@
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<g>
 										<g>
-											<path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+											<path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035    c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719    c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z" fill="#aea512"/>
 										</g>
 									</g>
 								</svg>
 							</span>
-							<span class="contact-item-text">თბილისი, გელას ქუჩა 15</span>
+							<span class="contact-item-text">თბილისი, რენდომ ქუჩა 15</span>
 						</li>
 						<li class="contact-item">
 							<span class="contact-item-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 									<g>
 										<g>
-											<path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106    C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z     M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787    L338.213,256L482,112.212V399.787z"/>
+											<path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106    C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z     M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787    L338.213,256L482,112.212V399.787z" fill="#aea512"/>
 										</g>
 									</g>								
 								</svg>
@@ -347,7 +364,7 @@
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 503.604 503.604" style="enable-background:new 0 0 503.604 503.604;" xml:space="preserve">
 									<g>
 										<g>
-											<path d="M337.324,0H167.192c-28.924,0-53.5,23.584-53.5,52.5v398.664c0,28.916,24.056,52.44,52.98,52.44l170.412-0.184    c28.92,0,52.58-23.528,52.58-52.448l0.248-398.5C389.908,23.452,366.364,0,337.324,0z M227.68,31.476h49.36    c4.336,0,7.868,3.52,7.868,7.868c0,4.348-3.532,7.868-7.868,7.868h-49.36c-4.348,0-7.868-3.52-7.868-7.868    C219.812,34.996,223.332,31.476,227.68,31.476z M198.02,33.98c2.916-2.912,8.224-2.952,11.136,0c1.46,1.456,2.324,3.5,2.324,5.588    c0,2.048-0.864,4.088-2.324,5.548c-1.452,1.46-3.504,2.32-5.548,2.32c-2.084,0-4.088-0.86-5.588-2.32    c-1.452-1.456-2.28-3.5-2.28-5.548C195.736,37.48,196.568,35.436,198.02,33.98z M250.772,488.008    c-12.984,0-23.544-10.568-23.544-23.548c0-12.984,10.56-23.548,23.544-23.548s23.544,10.564,23.544,23.548    C274.316,477.44,263.752,488.008,250.772,488.008z M365.488,424.908H141.232V74.756h224.256V424.908z"/>
+											<path d="M337.324,0H167.192c-28.924,0-53.5,23.584-53.5,52.5v398.664c0,28.916,24.056,52.44,52.98,52.44l170.412-0.184    c28.92,0,52.58-23.528,52.58-52.448l0.248-398.5C389.908,23.452,366.364,0,337.324,0z M227.68,31.476h49.36    c4.336,0,7.868,3.52,7.868,7.868c0,4.348-3.532,7.868-7.868,7.868h-49.36c-4.348,0-7.868-3.52-7.868-7.868    C219.812,34.996,223.332,31.476,227.68,31.476z M198.02,33.98c2.916-2.912,8.224-2.952,11.136,0c1.46,1.456,2.324,3.5,2.324,5.588    c0,2.048-0.864,4.088-2.324,5.548c-1.452,1.46-3.504,2.32-5.548,2.32c-2.084,0-4.088-0.86-5.588-2.32    c-1.452-1.456-2.28-3.5-2.28-5.548C195.736,37.48,196.568,35.436,198.02,33.98z M250.772,488.008    c-12.984,0-23.544-10.568-23.544-23.548c0-12.984,10.56-23.548,23.544-23.548s23.544,10.564,23.544,23.548    C274.316,477.44,263.752,488.008,250.772,488.008z M365.488,424.908H141.232V74.756h224.256V424.908z" fill="#aea512"/>
 										</g>
 									</g>
 								</svg>
@@ -376,7 +393,7 @@
 				</div>
 
 				<div class="main-map">
-					<div id="googleMap" style="height:500px; width: 100%;"></div>
+					<div id="googleMap" class="googleMap" style="width: 100%;"></div>
 				</div>
 			</div>
 		</div>
@@ -402,6 +419,20 @@
 			</svg>
 		</span>
 		<img src="" id="img01" class="img01" alt="">
+	</div>
+
+	<div class="mobile-nav" id="mobile-nav">
+		<span class="close-modal" id="close-menu" onclick="closeMenu()">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+				<g>
+					<g xmlns="http://www.w3.org/2000/svg">
+						<g>
+							<path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717    L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859    c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287    l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285    L284.286,256.002z" fill="#222" data-original="#000000" style="" class=""/>
+						</g>
+					</g>
+				</g>
+			</svg>
+		</span>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

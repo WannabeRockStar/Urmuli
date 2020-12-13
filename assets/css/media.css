@@ -1,7 +1,7 @@
 @media(max-width: 1679px) {
 	.wrapper {
-		padding-left: 225px;
-		padding-right: 225px;
+		padding-left: 175px;
+		padding-right: 175px;
 	}
 }
 
@@ -9,5 +9,105 @@
 	.wrapper {
 		padding-left: 75px;
 		padding-right: 75px;
-	}
+    }
+    
+    .swiper-slide .text {
+        left: 0;
+        text-align: center;
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .swiper-slide .slide-title {
+        text-align: center;
+    }
+
+    .about-top-box {
+        width: 100%;
+    }
+
+    .googleMap {
+        height: 300px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .swiper-container {
+        height: 600px;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .about-top-box {
+        display: none;
+    }
+
+    .about .about-image {
+        width: 100%;
+        border: none;
+    }
+
+    .about .about-info {
+        width: 100%;
+        border-left: 6px solid rgba(0, 0, 0, 0.1);
+        border-top: none;
+    }
+
+    .food-box {
+        width: 48%;
+    }
+    
+    .parallax-window {
+        height: 500px;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact .contact-info {
+        width: 100%;
+    }
+
+    .contact .main-map {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .wrapper {
+		padding-left: 25px;
+		padding-right: 25px;
+    }
+    
+    ul.nav {
+        display: none;
+    }
+
+    .header .burger-menu {
+        display: block;
+    }
+
+    .header-fixed .burger-menu {
+        display: block; 
+    }
+
+    .menu-slider .swiper-button-prev {
+        left: 10px;
+    }
+    
+    .menu-slider .swiper-button-next {
+        right: 10px;
+    }
+
+    .food-box {
+        width: 100%;
+    }
+
+    .parallax-window {
+        height: 300px;
+    }
 }

@@ -22,3 +22,17 @@ document.addEventListener('scroll', () => {
         logo.lastElementChild.style.display = 'block'
     }
 })
+
+function showMobileMenu() {
+    const mobileNav = document.getElementById('mobile-nav')
+
+    setTimeout(() => {
+        mobileNav.classList.add('mobile-nav-show')
+    }, 100)
+}
+
+function closeMenu() {
+    const mobileNav = document.getElementById('mobile-nav')
+
+    mobileNav.classList.remove('mobile-nav-show')
+}
