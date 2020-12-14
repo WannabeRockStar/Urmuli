@@ -153,9 +153,9 @@ function initActivePageItem(num) {
             </div>
             <div class="menu-page-info">
                 <h3 class="menu-page-title">
-                    ${data[i].title} ${data[i].id}
+                    ${data[i].title} ${data[i].id}<br class="br-class" />
                     <span class="menu-title-border"></span>
-                    ₾ ${data[i].price}
+                    <span class="menu-page-price">₾ ${data[i].price}</span>
                 </h3>
                 <div class="menu-page-text">
                     ${data[i].recipes}

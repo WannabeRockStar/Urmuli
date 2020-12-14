@@ -186,9 +186,47 @@ a.nav-link.active {
 	transition: all 200ms;
 }
 
+.mobile-nav-header {
+	position: relative;
+	height: 66px;
+	padding: 1rem 0;
+	border-bottom: 1px solid #eee;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav-header .close-menu {
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	text-align: right;
+	position: absolute;
+	right: 1rem;
+}
+
+.mobile-nav-header .close-menu svg {
+	width: 100%;
+	height: 100%;
+}
+
+.mobile-nav-list {
+	text-align: center;
+	margin-top: 2rem;
+	padding-top: 1rem;
+}
+
+.mobile-nav-list .mobile-nav-item {
+	padding-bottom: 16px;
+}
+
+.mobile-nav-list .mobile-nav-link {
+	color: #aea512;
+	font-size: 21px;
+}
+
 .mobile-nav-show {
 	transform: translateX(0);
 }
+
 
 /*
 *****
@@ -236,6 +274,7 @@ Swiper stylesheet
 
 .swiper-slide img {
 	width: 100%;
+	height: 100%;
 }
 
 .swiper-slide .slide-overlay {
@@ -396,9 +435,9 @@ Menu stylesheet
 	padding: 120px 0;
 }
 
-.main-slider {
-	/* overflow: hidden; */
-}
+/* .menu-slider {
+	overflow: hidden;
+} */
 
 .menu-box {
 	width: 100%;
@@ -495,6 +534,10 @@ Menu stylesheet
 	visibility: visible;
 }
 
+.br-class {
+	display: none;
+}
+
 
 /****
 *****
@@ -562,7 +605,8 @@ Parallax stylesheet
 	align-items: center;
 }
 
-.parallax-contact {
+.parallax-contact,
+.parallax-restaurant {
 	min-height: 500px;
 }
 
