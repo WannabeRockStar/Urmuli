@@ -259,6 +259,8 @@ Swiper stylesheet
 	align-items: center;
 	position: relative;
 }
+
+
 .swiper-pagination .swiper-pagination-bullet {
 	width: 13px;
 	height: 13px;
@@ -272,9 +274,13 @@ Swiper stylesheet
 	color: #fff;	
 }
 
-.swiper-slide img {
+.main-swiper-slide img {
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	top: 0;
+	left: 0;
 }
 
 .swiper-slide .slide-overlay {
@@ -295,9 +301,7 @@ Swiper stylesheet
 	color: #aea512;
 }
 
-.slide-title-one {
 
-}
 
 .slide-title-two {
 	transform: translateY(-40px);
@@ -305,9 +309,7 @@ Swiper stylesheet
 	transition-delay: 1s;
 }
 
-.slide-title-three {
-	
-}
+
 
 .slide-subtitle {
 	opacity: 0;
