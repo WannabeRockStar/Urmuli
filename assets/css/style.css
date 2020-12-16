@@ -387,23 +387,22 @@ About stylesheet
 	font-size: 18px;
 }
 
-.about-info {
+div.about-info {
 	width: 65%;
 	text-align: center;
 	border: 6px solid rgba(0, 0, 0, 0.1);
 	border-left: 0;
 	padding: 3rem;
 	background: #eee;
-
 }
 
-.about-info .about-subtitle {
+div.about-info .about-subtitle {
 	color: #aea512;
 	font-size: 16px;
 	font-weight: normal;
 }
 
-.about-info .about-text {
+div.about-info .about-text {
 	line-height: 2rem;
 	color: #999;
 	margin-bottom: 2rem;
@@ -609,7 +608,8 @@ Parallax stylesheet
 }
 
 .parallax-contact,
-.parallax-restaurant {
+.parallax-restaurant,
+.parallax-menu {
 	min-height: 500px;
 }
 

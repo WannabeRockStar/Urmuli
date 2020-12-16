@@ -230,7 +230,8 @@
     }
 
     .parallax-contact,
-    .parallax-restaurant {
+    .parallax-restaurant,
+    .parallax-menu {
         min-height: 400px;
     }
 
@@ -241,5 +242,18 @@
 
     .swiper-container {
         height: 400px;
+    }
+
+    .about-image .about-image-title {
+        padding: 1rem;
+        
+    }
+
+    div.about-info {
+        padding: 2rem 1rem;
+    }
+
+    div.about-info .about-text {
+        line-height: 1.8rem;
     }
 }
