@@ -483,7 +483,7 @@ Menu stylesheet
 	transform: scale(1.05);
 }
 .menu-box:hover .overlay {
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(210, 200, 42, 0.5);
 }
 
 .menu-box:hover .overlay .expand-icon {
@@ -595,6 +595,7 @@ Parallax stylesheet
 	color: white;
 	position: relative;
 	z-index: 2;
+	font-weight: normal;
 	
 }
 
@@ -685,6 +686,9 @@ Footer stylesheet
 .footer {
 	height: 84px;
 	background: #222;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -830,4 +834,42 @@ ul.pagination-list {
 .pagination-list .pagination-item.active {
 	box-shadow: 0 0 0 3px #d2c82a;
 	background: #fff;
+}
+
+.photo-gallery {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.photo-gallery .card {
+	width: 23%;
+	margin-right: 2.66%;
+	margin-bottom: 2.66%;
+	position: relative;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.photo-gallery .card:nth-child(4n) {
+	margin-right: 0;
+}
+.photo-gallery .card img {
+	width: 100%;
+	display: block;
+}
+
+.photo-gallery .card .overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(210, 200, 42, 0.5);
+	opacity: 0;
+	cursor: pointer;
+}
+
+.photo-gallery .card:hover .overlay {
+	opacity: 1;
+}
+
+.photo-gallery .card:hover .expand-icon {
+	transform: translateY(0);
+	opacity: 1;
 }

@@ -90,6 +90,20 @@
     .img01 {
         width: 80%;
     }
+
+    .photo-gallery .card {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+    }
+
+    .photo-gallery .card:nth-child(4n) {
+        margin-right: 4%;
+    }
+
+    .photo-gallery .card:nth-child(2n) {
+        margin-right: 0;
+    }
 }
 
 @media(max-width: 768px) {
@@ -164,6 +178,20 @@
 
     .swiper-container {
         height: 500px;
+    }
+
+    .photo-gallery .card {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 6%;
+    }
+
+    .photo-gallery .card:nth-child(4n) {
+        margin-right: 4%;
+    }
+
+    .photo-gallery .card:nth-child(2n) {
+        margin-right: 0;
     }
 }
 

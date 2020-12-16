@@ -61,14 +61,14 @@ function getTextEffect() {
 getTextEffect()
 
 
-const menuBox = document.getElementsByClassName('menu-box')
-const prevBtn = document.getElementById('prev-btn')
-const nextBtn = document.getElementById('next-btn')
+// const menuBox = document.getElementsByClassName('menu-box')
+// const prevBtn = document.getElementById('prev-btn')
+// const nextBtn = document.getElementById('next-btn')
 
-let sliderCounter = {
-    num: 0,
-    num2: 3
-}
+// let sliderCounter = {
+//     num: 0,
+//     num2: 3
+// }
 
 // function initSlider() {
 //     for(let i = 0; i < menuBox.length; i++) {

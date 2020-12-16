@@ -177,36 +177,9 @@ function setActivePageItem(e) {
     const pageItems = document.getElementsByClassName('pagination-item')
 
     initActivePageItem(parseInt(e.target.dataset.index))
-    // console.log(e.target)
-    // for(let i = 0; i < pageItems.length; i++) {
-    //     pageItems[i].classList.remove('active')
-        
-    // }
 
     console.log(e.target)
     
     e.target.classList.add('active')
-
-
-    // for(let i = 0; i < menus.length; i++) {
-    //     content += `<div class="menu-page-item" data-aos="fade-up">
-    //     <div class="menu-page-image">
-    //         <img src="https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png" alt="">
-    //     </div>
-    //     <div class="menu-page-info">
-    //         <h3 class="menu-page-title">
-    //             Tex-Mex Chicken Wings
-    //             <span class="menu-title-border"></span>
-    //             $ 6.50
-    //         </h3>
-    //         <div class="menu-page-text">
-    //             Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor
-    //         </div>
-    //     </div>
-    // </div>`
-    // }
-
-    // menuContainer.innerHTML = content
+    
 }
-
-// setActivePageItem()
