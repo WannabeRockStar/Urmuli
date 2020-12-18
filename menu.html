@@ -53,7 +53,15 @@
                 <a href="menu.html" class="nav-link active">მენიუ</a>
             </li>
             <li class='nav-item'>
-                <a href="location.html" class="nav-link">დარბაზი</a>
+                <span class="nav-link">ლოკაცია</span>
+                <ul class="drop-down">
+                    <li class="drop-down-item">
+                        <a href="location.html" class="drop-down-link">დარბაზი</a>
+                    </li>
+                    <li class="drop-down-item">
+                        <a href="location.html" class="drop-down-link">ეზო</a>
+                    </li>
+                </ul>
             </li>
             <li class='nav-item'>
                 <a href="contact.html" class="nav-link">კონტაქტი</a>
@@ -125,14 +133,17 @@
 				</a>
 			</li>
 			<li class="mobile-nav-item">
-				<a href="location.html" class="mobile-nav-link">
-					დარბაზი
-				</a>
-			</li>
-			<li class="mobile-nav-item">
-				<a href="contact.html" class="mobile-nav-link">
+				<span class="mobile-nav-link" onclick="document.getElementsByClassName('drop-mobile')[0].classList.toggle('drop-mobile-show');">
 					ლოკაცია
-				</a>
+				</span>
+				<ul class="drop-mobile">
+					<li class="drop-mobile-item">
+						<a href="location.html" class="drop-mobile-link">დარბაზი</a>
+					</li>
+					<li class="drop-mobile-item">
+						<a href="location.html" class="drop-mobile-link">ეზო</a>
+					</li>
+				</ul>
 			</li>
 			<li class="mobile-nav-item">
 				<a href="contact.html" class="mobile-nav-link">

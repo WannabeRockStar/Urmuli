@@ -180,6 +180,10 @@
         height: 500px;
     }
 
+    .photo-gallery {
+        margin-bottom: 0;
+    }
+
     .photo-gallery .card {
         width: 100%;
         margin-right: 0;
@@ -192,6 +196,10 @@
 
     .photo-gallery .card:nth-child(2n) {
         margin-right: 0;
+    }
+
+    .photo-gallery .card:last-child {
+        margin-bottom: 0;
     }
 }
 

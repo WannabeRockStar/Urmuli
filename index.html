@@ -34,7 +34,7 @@
 							<path class="fil0" d="M1682 1056c-366,-337 -1050,-89 -664,649l-165 144c-244,-783 301,-1100 718,-1010 66,15 127,47 181,90 19,16 100,92 151,132 301,231 722,150 913,-248 56,-156 43,11 34,40 -196,640 -749,589 -1168,203z"/>
 						</g>
 					</svg>
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="91.1562mm" height="58.5235mm" fill="#aea512" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; width: 64px; height: 64px; display: none" viewBox="0 0 4492 2884">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="91.1562mm" height="58.5235mm" fill="#fac077" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd; width: 64px; height: 64px; display: none" viewBox="0 0 4492 2884">
 						<defs>
 						 
 						</defs>
@@ -60,7 +60,15 @@
 					<a href="menu.html" class="nav-link">მენიუ</a>
 				</li>
 				<li class='nav-item'>
-					<a href="location.html" class="nav-link">დარბაზი</a>
+					<span class="nav-link">ლოკაცია</span>
+					<ul class="drop-down">
+						<li class="drop-down-item">
+							<a href="location.html" class="drop-down-link">დარბაზი</a>
+						</li>
+						<li class="drop-down-item">
+							<a href="location.html" class="drop-down-link">ეზო</a>
+						</li>
+					</ul>
 				</li>
 				<li class='nav-item'>
 					<a href="contact.html" class="nav-link">კონტაქტი</a>
@@ -348,7 +356,7 @@
 			data-z-index="1"
 			data-speed="0.4"
 			data-image-src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/capella/demo/wp-content/uploads/2014/05/photodune-5087439-chicken-tagine-m.jpg">
-			<h2 class="outdoor-title caps" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="50">ურმულის ეზო</h2>
+			<h2 class="outdoor-title caps sec-title-white" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="50">ურმულის ეზო</h2>
 		</div>
 	</div>
 
@@ -483,14 +491,17 @@
 				</a>
 			</li>
 			<li class="mobile-nav-item">
-				<a href="location.html" class="mobile-nav-link">
-					დარბაზი
-				</a>
-			</li>
-			<li class="mobile-nav-item">
-				<a href="contact.html" class="mobile-nav-link">
+				<span class="mobile-nav-link" onclick="document.getElementsByClassName('drop-mobile')[0].classList.toggle('drop-mobile-show');">
 					ლოკაცია
-				</a>
+				</span>
+				<ul class="drop-mobile">
+					<li class="drop-mobile-item">
+						<a href="location.html" class="drop-mobile-link">დარბაზი</a>
+					</li>
+					<li class="drop-mobile-item">
+						<a href="location.html" class="drop-mobile-link">ეზო</a>
+					</li>
+				</ul>
 			</li>
 			<li class="mobile-nav-item">
 				<a href="contact.html" class="mobile-nav-link">
@@ -507,7 +518,8 @@
 	<script src="js/aos.js"></script>
 	<script>
 		AOS.init({
-			once: true
+			once: true,
+			disable: 'mobile'
 		});
 
 		let map;
