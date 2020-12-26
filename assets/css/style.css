@@ -188,7 +188,7 @@ ul.nav .nav-item:hover .drop-down {
 
 .drop-down {
 	position: absolute;
-	background: #aea512;
+	background: #EEE;
 	padding: 1rem;
 	border: 1px solid #ccc;
 	top: 100%;
@@ -208,7 +208,7 @@ ul.nav .nav-item:hover .drop-down {
 	color: #333;
 	font-weight: bold;
 	transition: all 400ms;
-	color: #fff;
+	color: #333;
 }
 
 .drop-down .drop-down-link:hover {
@@ -809,8 +809,12 @@ Footer stylesheet
 	opacity: 1;
 	visibility: visible;
 }
+.img01-container {
+	width: 44%;
+}
 
 .img01 {
+	width: 100%;
 	transform: scale(0);
 	transition: all 400ms;
 }
@@ -926,4 +930,12 @@ ul.pagination-list {
 .photo-gallery .card:hover .expand-icon {
 	transform: translateY(0);
 	opacity: 1;
+}
+
+.contact-container {
+	display: flex;
+}
+
+.contact-container .contact-box {
+	width: 50%;
 }
