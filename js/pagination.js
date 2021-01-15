@@ -1,114 +1,72 @@
 let menus = [
     {
         id: 1,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'ხინკალი "ქალაქური"',
+        price: '1.00',
+        url: './../assets/images/khinkali.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 2,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'ღორის მწვადი',
+        price: '12.00',
+        url: './../assets/images/bbq2.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 3,
-        title: 'მტრედის კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'სალათა',
+        price: '6.50',
+        url: './../assets/images/salad.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 4,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'მადამ ბოვარი',
+        price: '17.00',
+        url: './../assets/images/omlet.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 5,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'ქაბაბი',
+        price: '12.00',
+        url: './../assets/images/bbq.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 6,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'ფხალის ასორტი',
+        price: '6.50',
+        url: './../assets/images/salad2.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 7,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'შემწვარი კალმახი',
+        price: '12.00',
+        url: './../assets/images/food.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 8,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'შემწვარი ორაგული',
+        price: '6.50',
+        url: './../assets/images/food3.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 9,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'ქოთნის ლობიო',
+        price: '5.00',
+        url: './../assets/images/food2.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
     {
         id: 10,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
-        recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
-    },
-    {
-        id: 11,
-        title: 'ჩვენი კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
-        recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
-    },
-    {
-        id: 12,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
-        recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
-    },
-    {
-        id: 13,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
-        recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
-    },
-    {
-        id: 14,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
-        recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
-    },
-    {
-        id: 15,
-        title: 'რენდომ კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
-        recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
-    },
-    {
-        id: 16,
-        title: 'რაღაც კერძი',
-        price: 6.50,
-        url: 'https://demo.cmssuperheroes.com/themeforest/wp-gaucho/wp-content/uploads/2015/11/dish-1-large-180x180.png',
+        title: 'მექსიკური კარტოფილი',
+        price: '8.00',
+        url: './../assets/images/mexican.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     }
 ]
@@ -152,17 +110,18 @@ function initActivePageItem(num) {
                 <img src="${data[i].url}" alt="">
             </div>
             <div class="menu-page-info">
-                <h3 class="menu-page-title">
-                    ${data[i].title} ${data[i].id}<br class="br-class" />
-                    <span class="menu-title-border"></span>
-                    <span class="menu-page-price">₾ ${data[i].price}</span>
-                </h3>
-                <div class="menu-page-text">
-                    ${data[i].recipes}
-                </div>
+                
+                    <h3 class="menu-page-title">${data[i].title}<br class="br-class" /></h3>
+                    <h3 class="menu-page-title">₾ ${data[i].price}</h3>
+                
+                
             </div>
         </div>`
     }
+
+    // <div class="menu-page-text">
+    //     ${data[i].recipes}
+    // </div>
 
     pageLists.innerHTML = pageContent
     menuContainer.innerHTML = content

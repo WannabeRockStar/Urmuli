@@ -215,6 +215,11 @@
         display: block;
     }
 
+    .menu-page-list .menu-page-item .menu-page-info {
+        width: 100%;
+        display: block;
+    }
+
     .menu-page-list .menu-page-item .menu-page-image img {
         width: 120px;
     }

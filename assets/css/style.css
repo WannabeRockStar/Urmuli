@@ -841,22 +841,55 @@ Footer stylesheet
 	margin-right: 0;
 }
 
+.food-box-image {
+	width: 100%;
+	margin-bottom: .7rem;
+}
+
+.food-box-image img {
+	border-radius: 50%;
+	box-shadow: 1px 1px 4px 3px #ccc;
+}
+
 
 .menu-page-list .menu-page-item .menu-page-image {
 	width: 80px;
 	margin-right: 1rem;
 	display: flex;
-    align-items: center;
+	align-items: center;
+	border-radius: 50%;
 }
 
 .menu-page-list .menu-page-item .menu-page-image img {
 	width: 100%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 4px 3px #ccc;
 }
+
+.menu-page-list .menu-page-item .menu-page-info {
+	width: 100%;
+    display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.menu-page-list .menu-page-item .menu-page-info:before {
+	content: '';
+	position: absolute;
+	top: 32%;
+	background: transparent;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dotted #ccc;
+}
+
 
 .menu-page-list .menu-page-item .menu-page-info .menu-page-title {
 	font-size: 20px;
 	font-weight: normal;
 	margin-bottom: .8rem;
+	background: white;
+	padding: 0 8px;
 }
 
 .menu-page-list .menu-page-item .menu-page-info .menu-page-text {
@@ -900,19 +933,21 @@ ul.pagination-list {
 }
 
 .photo-gallery .card {
-	width: 23%;
-	margin-right: 2.66%;
-	margin-bottom: 2.66%;
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 2%;
 	position: relative;
-	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px 2px #ccc;
 }
 
-.photo-gallery .card:nth-child(4n) {
+.photo-gallery .card:nth-child(3n) {
 	margin-right: 0;
 }
 .photo-gallery .card img {
 	width: 100%;
-	display: block;
+	height: 100%;
+	/* display: block; */
+	object-fit: cover;
 }
 
 .photo-gallery .card .overlay {
