@@ -16,7 +16,7 @@ let menus = [
     {
         id: 3,
         title: 'სალათა',
-        price: '6.50',
+        price: '8.00',
         url: './../assets/images/salad.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
@@ -37,7 +37,7 @@ let menus = [
     {
         id: 6,
         title: 'ფხალის ასორტი',
-        price: '6.50',
+        price: '15.00',
         url: './../assets/images/salad2.jpg',
         recipes: 'Chicken breast . spiced bread crumbs . chips or mashed potatoes . aioli sauce lorem ipsum dolor'
     },
